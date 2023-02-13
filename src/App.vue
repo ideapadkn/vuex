@@ -2,7 +2,7 @@
   <div id="app">
     <post-form />
     <h1>{{ postsCount }}</h1>
-    <div class="post" v-for="post in allPosts" :key="post.id">
+    <div class="post" v-for="post in validPost" :key="post.id">
       <h2>{{ post.title }}</h2>
       <p>{{ post.body }}</p>
     </div>

@@ -18,17 +18,17 @@ export default {
     posts: []
   },
   getters: {
-    // validPost(state) {
-    //   return state.posts.filter(p => {
-    //     return p.title && p.body
-    //   })
-    // },
+    validPost(state) {
+      return state.posts.filter(p => {
+        return p.title && p.body
+      })
+    },
     allPosts(state) {
       return state.posts
     },
     postsCount(state, getters) {
-      // return getters.validPost.length
-      return state.allPost.length
+      return getters.validPost.length
+      // return state.allPost.length
     }
   },
 }
